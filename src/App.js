@@ -179,10 +179,37 @@ function App() {
         la codificación que el programador hará para que el sitio
         sea funcional.
       </p>
+      <h2>webpack</h2>
+      <p>
+        Webpack es un <strong>module bundler</strong> o
+        empaquetador de módulos, que recoge todos los
+        módulos que tenga nuestra app y los transforma
+        en assets que puede entender el navegador.</p>
+      <p>Al utilizar el create-react-app webpack está
+        incluido por defecto. Webpack tambien se encarga
+        de enviar los errores cuando falten los paquetes
+        del proyecto.</p>
+      <h2>DOM</h2>
+      <p>Como se vio en la clase 16 (última clase de JS),
+        con el Dom se puede interactuar directamente en
+        el document. Se puede agregar código html y
+        css.</p>
+      <h2>DOM Real vs. DOM Virtual</h2>
+      <p>Cuando el browser actualiza el DOM (la parte que se ve del navegador, esto incluye html y css, con JS) lo debe hacer de manera completa. En cambio el Virtual DOM solo modifica lo que cambia y actualiza el DOM usando menos recursos que si lo actualizara de manera completa, cada una de esa actualizacion se distribuye en nodos y estos representan un componente en React. El DOM como el Virtual DOM son copias que se encuentran en memoria, la diferencia es que uno utiliza de manera directa la tarjeta gráfica (UI = User Interfaz o interfaz de usuario) para modificar los signos y diagramas que están plasmado en la pantalla, mientras que el VD solo se actualiza al DOM cuando es requerido y no por cada cambio. React esta pendiente a cada modificación del DOM virtual y reacciona (React) a esos cambios y los plasma en el DOM Real. React trabaja mucho con lo que se denominan estados (state). Un estado representa a algo que existe en este momento. Una página va cambiando a medida que se interactúa con ella, El DOM virtual por medio de React está atento a los estados para saber si se modifican. React reacciona de manera rápida a los cambios de los estados. El VD tiene control total de los estados y estos cambios se realizan casi al instante, porque se reacciona a los cambios de manera «casi» instantánea. </p>
+
+      <h2>JSX</h2>
 
 
 
-
+      <h4>Para poder visualizar un proyecto react que está alojado en Github</h4>
+      <p>Descargar el proyecto desde Github</p>
+      <p>Para poder trabajar con el proyecto de manera local:</p>
+      <pre>
+        <code>
+          $ npm install<br />
+          $ npm start
+        </code>
+      </pre>
     </>
     
 
