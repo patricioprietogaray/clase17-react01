@@ -20,6 +20,19 @@ function App() {
   aplicación.</p>
   <p>Podemos instalarlas localmente, disponibles para usar en un proyecto en específico o globalmente, 
   disponibles para usar cada vez que querramos. NPM es una librería de JS.</p>
+  <p>Para saber que version tengo de node</p>
+      <pre>
+        <code>
+          $ node -v 
+        </code>
+      </pre>
+  <p>Para saber que version tengo de npm</p>
+      <pre>
+        <code>
+          $ npm -v
+        </code>
+      </pre>
+     
   <h2>React</h2>
   <p>React es una biblioteca de JS eficiente y declarativa que se utiliza para crear interfaces 
   interactivas. Una librería o biblioteca en este sentido es un conjunto de herramientas 
@@ -124,7 +137,54 @@ function App() {
         <li>Requiere de un gran conjunto de herramientas para funcionar de manera óptima y ser compatible con otras tecnologías.</li>
         <li>Tiene problemas de SEO. (posicionamiento en los buscadores -ya solucionado?)</li>
       </ul>
-</>
+
+      <h2>Vamos a ver como trabajar con React</h2>
+      <p>Para crear una proyecto nuevo en react ejecuto en la consola / terminal:</p>
+      <pre>
+        <code>
+          $ npx create-react-app my-app
+        </code>
+      </pre>
+      <p>Una vez creado la carpeta y descargadas las librerías debo ingresar a la carpeta:</p>
+      <pre>
+        <code>
+          $ cd my-app
+        </code>
+      </pre>
+      <p>y por ultimo ejecutar el proyecto con:</p>
+      <pre>
+        <code>
+          $ npm start
+        </code>
+      </pre>
+      <p>Para más detalle de como funciona create-react-app (<a href='https://create-react-app.dev/'>haga clic aquí para aprender más!</a>)</p>
+      <h5>Nota: Debe tener instalado git (<a href='https://www.atlassian.com/es/git/tutorials/learn-git-with-bitbucket-cloud'>haga clic aquí para aprender más!</a> o puede ver <a href='https://www.youtube.com/watch?v=3GymExBkKjE'>este video de <strong>Brais Moure</strong></a>!)</h5>
+
+      <h2>¿Qué significa lo que estoy escribiendo en la consola?</h2>
+      <p><strong>npx</strong>: es una herramienta de ejecucion paquetes de node.</p>
+      <p><strong>create-react-app</strong>: comando para crear una nueva app con react.</p>
+      <p><strong>my-app</strong>: nombre que tendrá la nueva aplicación.</p>
+      <p><strong>cd</strong>: cambia de directorio.</p>
+      <p><strong>npm</strong>: herramienta de manejo de paquetes node.</p>
+      <p><strong>start</strong>: comando que permite iniciar my-app.</p>
+
+      <p>
+        En la carpeta creada por react se puede ver que posee un
+        directorio denominado <strong>node_modules</strong> donde
+        estan guardados todos los módulos necesarios para poder correr npm.</p>
+      <p>En la carpeta <strong>public</strong> se verá los archivos
+        principales que se mostrarán al cliente como el
+        favicon, index.html, entre otros.</p>
+      <p>Dentro de la carpeta <strong>src</strong> se encuentra toda
+        la codificación que el programador hará para que el sitio
+        sea funcional.
+      </p>
+
+
+
+
+    </>
+    
 
   );
 }
