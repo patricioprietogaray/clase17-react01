@@ -198,8 +198,43 @@ function App() {
       <p>Cuando el browser actualiza el DOM (la parte que se ve del navegador, esto incluye html y css, con JS) lo debe hacer de manera completa. En cambio el Virtual DOM solo modifica lo que cambia y actualiza el DOM usando menos recursos que si lo actualizara de manera completa, cada una de esa actualizacion se distribuye en nodos y estos representan un componente en React. El DOM como el Virtual DOM son copias que se encuentran en memoria, la diferencia es que uno utiliza de manera directa la tarjeta gráfica (UI = User Interfaz o interfaz de usuario) para modificar los signos y diagramas que están plasmado en la pantalla, mientras que el VD solo se actualiza al DOM cuando es requerido y no por cada cambio. React esta pendiente a cada modificación del DOM virtual y reacciona (React) a esos cambios y los plasma en el DOM Real. React trabaja mucho con lo que se denominan estados (state). Un estado representa a algo que existe en este momento. Una página va cambiando a medida que se interactúa con ella, El DOM virtual por medio de React está atento a los estados para saber si se modifican. React reacciona de manera rápida a los cambios de los estados. El VD tiene control total de los estados y estos cambios se realizan casi al instante, porque se reacciona a los cambios de manera «casi» instantánea. </p>
 
       <h2>JSX</h2>
+      <p>
+        Primero al acceder al sitio web el navegador 
+        llerá al archivo index.html ubicado en la
+        carpeta public del proyecto.
+      </p>
+      <p>
+        Index es un archivo de tipo html
+        puro sin scripts?, solo contiene un div con
+        un id con el valor root en donde react incluirá
+        en ese lugar el resultado de la programacion
+      </p>
+      <p>
+        El archivo index.js dentro de la carpeta src será el Primer
+        archivo en ser leido por React para desarrollar y mostrar 
+        el sitio dentro del div root de index.html. Este archivo y 
+        esta parte en especial se conecta con el archivo index.html.
+      </p>
+    
+      <p>
+        En index.js se puede encontrar (como se vio en la clase 16) una declaración
+        y llamado al id root del index.html, luego root es renderizado en el DOM y por 
+        último se llama a App (<strong>{'<'}App {'/>'}</strong>), previamente
+        declarada en <strong>import App from './App';</strong>.
+      </p>
+      <p>
+        Dentro de App.js se puede ver una funcion App como si se tratase de una funcion
+        JS, pero se pueden insertar código JSX el cual es parecido a html, aunque en 
+        realidad es una mezcla de html con css y JS. Todo este código JSX esta dentro
+        de un return el cual retorna una página web. El código es más limpio que JS (como declarar
+        objetos del tipo appendChild) y se lo denomina código declarativo.
+      </p>
+      
 
 
+
+
+      
 
       <h4>Para poder visualizar un proyecto react que está alojado en Github</h4>
       <p>Descargar el proyecto desde Github</p>
@@ -210,6 +245,10 @@ function App() {
           $ npm start
         </code>
       </pre>
+
+
+      {/* 1:33 */}
+
     </>
     
 
